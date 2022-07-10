@@ -57,36 +57,35 @@ public class NodeTest {
     @Test
     public void testSetNext() {
         System.out.println("setNext");
-        Node next = null;
         Node instance = new Node();
-        instance.setNext(next);
+        instance.setNext(null);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
 
     /**
-     * Test of getObject method, of class Node.
+     * Test of getValue method, of class Node.
      */
     @Test
-    public void testGetObject() {
-        System.out.println("getObject");
+    public void testGetValue() {
+        System.out.println("getValue");
         Node instance = new Node();
         Object expResult = null;
-        Object result = instance.getObject();
+        Object result = instance.getValue();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
 
     /**
-     * Test of setObject method, of class Node.
+     * Test of setValue method, of class Node.
      */
     @Test
-    public void testSetObject() {
-        System.out.println("setObject");
-        Object o = null;
+    public void testSetValue() {
+        System.out.println("setValue");
+        Object v = null;
         Node instance = new Node();
-        instance.setObject(o);
+        instance.setValue(v);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }

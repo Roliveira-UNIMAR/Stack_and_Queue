@@ -58,7 +58,7 @@ public class QueueTest {
     public void testIsEmpty() {
         System.out.println("isEmpty");
         Queue instance = new Queue();
-        Boolean expResult = true;
+        Boolean expResult = null;
         Boolean result = instance.isEmpty();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
@@ -83,11 +83,11 @@ public class QueueTest {
      * Test of enqueue method, of class Queue.
      */
     @Test
-    public void testEnqueue_Object() {
+    public void testEnqueue_GenericType() {
         System.out.println("enqueue");
-        Object o = null;
+        Object v = null;
         Queue instance = new Queue();
-        instance.enqueue(o);
+        instance.enqueue(v);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }

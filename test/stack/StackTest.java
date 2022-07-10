@@ -58,7 +58,7 @@ public class StackTest {
     public void testIsEmpty() {
         System.out.println("isEmpty");
         Stack instance = new Stack();
-        Boolean expResult = true;
+        Boolean expResult = null;
         Boolean result = instance.isEmpty();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
@@ -71,9 +71,9 @@ public class StackTest {
     @Test
     public void testPush() {
         System.out.println("push");
-        Object o = null;
+        Object v = null;
         Stack instance = new Stack();
-        instance.push(o);
+        instance.push(v);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
