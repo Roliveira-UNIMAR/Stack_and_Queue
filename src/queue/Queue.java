@@ -12,8 +12,8 @@ import node.Node;
  * 
  * @author Rodrigo Oliveira - 29.655.609
  */
-public class Queue{
-    private Node top, tail;
+public class Queue<T> {
+    private Node<T> top, tail;
     private int size;
 
     /**
@@ -43,25 +43,25 @@ public class Queue{
     }
     
      /**
-     * Metodo retorna el frente de la cola
+     * Metodo que retorna el frente de la cola
      * 
      * @return null si la cola esta vacia, sino el valor contenido en el frente
      */
-    public Object front() {
+    public T front() {
         if (isEmpty()) {
             return null;
         } else {
-            return top.getObject();
+            return top.getValue();
         }
     }
     
     /**
      * Metodo que inserta al final de la cola
      * 
-     * @param o El nuevo nodo de la cola 
+     * @param v El nuevo nodo de la cola 
      */
-    public void enqueue(Object o) {
-        Node newNode = new Node(o, null);
+    public void enqueue(T v) {
+        Node<T> newNode = new Node(v, null);
         if (isEmpty()) {
             top = newNode;
         } else {
@@ -76,12 +76,12 @@ public class Queue{
      * 
      * @return aux El valor contenido en el frente de la cola
      */
-    public Object enqueue() {
-        Object aux;
+    public T enqueue() {
+        T aux;
         if (isEmpty()) {
             aux = null;
         } else {
-            aux = top.getObject();
+            aux = top.getValue();
             top = top.getNext();
             size--;
             if (isEmpty()){
