@@ -75,7 +75,7 @@ public class Node<T> {
      *
      * @param v El valor por el cual se cambiara el actual
      */
-    public void setObject(T v) {
+    public void setValue(T v) {
         this.value = v;
     }
 }
