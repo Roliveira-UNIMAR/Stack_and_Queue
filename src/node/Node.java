@@ -10,36 +10,36 @@ package node;
  * 
  * @author Rodrigo Oliveira - 29.655.609
  */
-public class Node {
-    private Object o;
-    private Node next;
+public class Node<T> {
+    private T value;
+    private Node<T> next;
 
     /**
      * Constructor por defecto del nodo
      */
     public Node() {
-        this.o = null;
+        this.value = null;
         this.next = null;
     }
 
     /**
      * Constructor con parametros del nodo
      * 
-     * @param o El valor del nodo
+     * @param v El valor del nodo
      * @param next El nodo siguiente
      */
-    public Node(Object o, Node next){
-        this.o = o;
+    public Node(T o, Node<T> next){
+        this.value = o;
         this.next = next;
     }
     
     /**
      * Constructor con parametros del nodo
      *
-     * @param o Es el objeto del nodo
+     * @param v Es el objeto del nodo
      */
-    public Node(Object o) {
-        this.o = o;
+    public Node(T v) {
+        this.value = v;
         this.next = null;
     }
     
@@ -48,7 +48,7 @@ public class Node {
      *
      * @return El siguiente nodo
      */
-    public Node getNext() {
+    public Node<T> getNext() {
        return this.next;
     }
     
@@ -57,25 +57,25 @@ public class Node {
      *
      * @param next El nodo por el cual se cambiara el actual
      */
-    public void setNext(Node next) {
+    public void setNext(Node<T> next) {
         this.next = next;
     }
     
     /**
      * Metodo que obtiene el valor del nodo
      *
-     * @return this.next El siguiente nodo
+     * @return El siguiente nodo
      */
-    public Object getObject() {
-       return this.o;
+    public T getValue() {
+       return this.value;
     }
     
     /**
      * Metodo que modifica el siguiente nodo
      *
-     * @param o El valor por el cual se cambiara el actual
+     * @param v El valor por el cual se cambiara el actual
      */
-    public void setObject(Object o) {
-        this.o = o;
+    public void setObject(T v) {
+        this.value = v;
     }
 }
