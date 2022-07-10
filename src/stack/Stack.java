@@ -12,8 +12,8 @@ import node.Node;
  * 
  * @author Rodrigo Oliveira - 29.655.609
  */
-public class Stack {
-    private Node top;
+public class Stack<T> {
+    private Node<T> top;
     private int size;
 
     /**
@@ -45,10 +45,10 @@ public class Stack {
     /**
      * Metodo que inserta en la cima un nodo
      * 
-     * @param o El valor del nuevo nodo a la pila 
+     * @param v El valor del nuevo nodo a la pila 
      */
-    public void push(Object o) {
-        Node newNode = new Node(o, top);
+    public void push(T v) {
+        Node<T> newNode = new Node(v, top);
         top = newNode;
         size++;
     }
@@ -58,12 +58,12 @@ public class Stack {
      *  
      * @return null si la pila esta vacia, sino el valor contenido en la cima
      */
-    public Object pop() {
-        Object aux;
+    public T pop() {
+        T aux;
         if (isEmpty()) {
             return null;
         } else {
-            aux = top.getObject();
+            aux = top.getValue();
             top = top.getNext();
             size--;
             return aux;
@@ -79,7 +79,7 @@ public class Stack {
         if (isEmpty()) {
             return null;
         } else {
-            return top.getObject();
+            return top.getValue();
         }
     }
 
