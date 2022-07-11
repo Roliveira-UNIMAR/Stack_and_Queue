@@ -8,7 +8,6 @@ package queue;
 import node.Node;
 
 /**
- * Write a description of class Queue here.
  * 
  * @author Rodrigo Oliveira - 29.655.609
  */
@@ -74,7 +73,7 @@ public class Queue<T> {
      /**
      * Metodo que remueve al principio de la cola
      * 
-     * @return aux El valor contenido en el frente de la cola
+     * @return El valor contenido en el frente de la cola
      */
     public T enqueue() {
         T aux;
