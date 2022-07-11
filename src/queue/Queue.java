@@ -26,7 +26,7 @@ public class Queue<T> {
     /**
      * Metodo que retorna la longitud de la cola
      * 
-     * @return size la longitud de la cola 
+     * @return La longitud de la cola 
      */
     public int getSize() {
         return size;
