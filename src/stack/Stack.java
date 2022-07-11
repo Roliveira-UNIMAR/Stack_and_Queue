@@ -8,7 +8,6 @@ package stack;
 import node.Node;
 
 /**
- * Esta es la clase pila dinamica en java
  * 
  * @author Rodrigo Oliveira - 29.655.609
  */
