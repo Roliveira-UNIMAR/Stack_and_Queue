@@ -28,8 +28,8 @@ public class Node<T> {
      * @param v El valor del nodo
      * @param next El nodo siguiente
      */
-    public Node(T o, Node<T> next){
-        this.value = o;
+    public Node(T v, Node<T> next){
+        this.value = v;
         this.next = next;
     }
     
