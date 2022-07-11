@@ -27,7 +27,7 @@ public class Stack<T> {
     /**
      * Metodo que retorna la longitud de la pila
      * 
-     * @return size la longitud de la pila 
+     * @return La longitud de la pila 
      */
     public int getSize() {
         return size;
@@ -75,7 +75,7 @@ public class Stack<T> {
      *
      * @return null si la pila esta vacia, el valor contenido en la cima
      */
-    public Object peek() {
+    public T peek() {
         if (isEmpty()) {
             return null;
         } else {
