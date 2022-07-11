@@ -6,7 +6,6 @@
 package node;
 
 /**
- * Esta es la clase nodo en java
  * 
  * @author Rodrigo Oliveira - 29.655.609
  */
