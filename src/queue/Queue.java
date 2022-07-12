@@ -75,7 +75,7 @@ public class Queue<T> {
      * 
      * @return El valor contenido en el frente de la cola
      */
-    public T enqueue() {
+    public T dequeue() {
         T aux;
         if (isEmpty()) {
             aux = null;
